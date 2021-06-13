@@ -1,38 +1,12 @@
 # 网易云音乐升级
 
-调用官方接口，每天自动刷完300首歌，一个账号平均耗时为1分钟左右。放在服务器运行即可不需要人工干预，每天自动听歌做任务，向你的微信发送任务通知，支持无服务器的云函数部署。api接口项目地址：[https://github.com/ZainCheung/netease-cloud-api](https://github.com/ZainCheung/netease-cloud-api)
+调用官方接口，每天自动刷完300首歌，一个账号平均耗时为1分钟左右。放在服务器运行即可不需要人工干预，每天自动听歌做任务，向你的微信发送任务通知，支持无服务器的云函数部署。api接口项目地址：https://github.com/2428513286/netease-cloud-api
 
 <p align="center">
     <a href="https://github.com/ZainCheung"><img alt="Author" src="https://img.shields.io/badge/author-ZainCheung-blueviolet"/></a>
     <img alt="PHP" src="https://img.shields.io/badge/code-Python-success"/>
     <img src="https://visitor-badge.glitch.me/badge?page_id=ZainCheung.netease-cloud"/>
 </p>
-
-
-[💡 总体介绍](#总体介绍)
-
-[🐛 部署Python项目的三种方法](#部署项目)
-
-[🚩 部署API接口的三种方法](#部署接口)
-
-[📌 配置账号](#配置账号)
-
-[📷 效果演示](#效果演示)
-
-[🎁 下载地址](#下载地址)
-
-[📋 查看日志](#查看日志)
-
-[🔔 注意事项](#注意事项)
-
-[💬 常见问题](#常见问题)
-
-[🎨 项目结构](#项目结构)
-
-[👻 免责声明](#免责声明)
-
-------
-
 
 
 # 总体介绍
@@ -176,7 +150,7 @@ python main.py
 
 这个网站是国外的，名气也很大，在上面托管网站的有几百万，免费使用，缺点就是速度没有国内的服务器快，还有就是如果没有访问了，一定时间后会进入休眠，等待下一次请求到来后需要等待几秒的解冻时间。不过这些对这个项目并没有什么影响，所以可以放心部署。
 
-API项目地址：[https://github.com/ZainCheung/netease-cloud-api](https://github.com/ZainCheung/netease-cloud-api)
+API项目地址：
 
 下面三种方法，第一种第二种最简单但速度慢，而且需要你有网站账号，第三种访问速度快但需要你有服务器，大家自己取舍，但基本上有服务器了都想自己搭建吧，大家随意
 
@@ -239,13 +213,7 @@ API项目地址：[https://github.com/ZainCheung/netease-cloud-api](https://gith
 
 ![](https://s1.ax1x.com/2020/06/29/NW4Ydg.png)
 
-#### 运行网站
 
-这里演示域名为test.com,然后在浏览器里输入你的网站地址，看到欢迎页面即为部署成功
-
-![](https://s1.ax1x.com/2020/06/29/NW4hS1.png)
-
-![](https://s1.ax1x.com/2020/06/29/NWIt8s.png)
 
 # 配置账号
 
@@ -293,7 +261,7 @@ password = bfa834f7de58cb650ca01edb********
 api = https://netease-cloud-api.glitch.me/
 ```
 
-api是指提供接口的服务器地址，这里提供一个Demo，源码也已经全部开源，如有对项目存在疑问欢迎查看源码，项目地址：[ZainCheung/netease-cloud-api](https://github.com/ZainCheung/netease-cloud-api)
+api是指提供接口的服务器地址，这里提供一个Demo，源码也已经全部开源，如有对项目存在疑问欢迎查看源码，项目地址：https://github.com/2428513286/netease-cloud-api
 
 另外想快速拥有一个一模一样的api服务并且使用自己定义的域名，那么可以按照上面项目的教程自己快速搭建
 
@@ -389,41 +357,13 @@ Server酱，是一个可以向你的微信推送消息的服务，并且消息�
 
 ------
 
-# 效果演示
-
-使用前可以看到是**9027**首
-
-![使用前](https://s1.ax1x.com/2020/06/27/N6YGQg.png)
-
-使用后是**9327**首，刚好涨了300首
-
-![使用后](https://s1.ax1x.com/2020/06/27/N6tWuQ.png)
-
-
-
-## 微信提醒
-
-微信提醒依赖于Server酱，这是个很奈斯的工具，个人开发的一个项目，对所有人保持免费开放，需要使用GitHub登陆，然后绑定微信，拿到你的密匙，填入到配置文件的`sckey`中，或者多账号文件`account.json`中
-
-提示的内容也可以自行修改，`main.py`文件的第143行左右的`diyText`函数里的content为提示内容，里面可以自定义提示内容，比如你不是考研党就把考研那一行删去，以及每日一句，，等等，如有需要尽情改。
-
-看一下效果：
-
-![微信提醒](https://s1.ax1x.com/2020/06/28/NgSrAx.png)
-
-------
-
 
 
 # 下载地址
 
 
 
-api接口项目地址：[https://github.com/ZainCheung/netease-cloud-api](https://github.com/ZainCheung/netease-cloud-api)
-
-api的Demo演示地址：[https://netease-cloud-api.glitch.me/](https://netease-cloud-api.glitch.me/)
-
-api在线服务器：[https://glitch.com/edit/#!/netease-cloud-api](https://glitch.com/edit/#!/netease-cloud-api)
+api接口项目地址：https://github.com/2428513286/netease-cloud-api
 
 ------
 
